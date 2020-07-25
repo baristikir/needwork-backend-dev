@@ -47,6 +47,7 @@ namespace needwork.backend
                 options.UseSqlite(Configuration.GetConnectionString("ConnectionName")));
             services.AddDefaultIdentity<IdentityUser>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
             // Defined JwtBearerDefaults AuthenticationScheme => Authorized API Controller need to use this scheme
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
               .AddJwtBearer(options =>
