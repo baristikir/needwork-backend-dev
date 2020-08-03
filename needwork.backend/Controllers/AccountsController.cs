@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using needwork.backend.Models;
+using System.Text.Json;
 
 namespace needwork.backend.Controllers
 {
